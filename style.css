@@ -11,11 +11,18 @@ body {
     margin: 0;
 }
 
+html {
+    /*scroll-behavior: smooth*/
+}
+
 .menu_icon {
     color: white;
-    margin-top: 22px;
-    margin-bottom: 43px;
-    font-size: 32px;
+    margin-bottom: 70px;
+    font-size: 38px;
+}
+
+.menu_icon:hover {
+    color: grey;
 }
 
 a,
@@ -37,13 +44,13 @@ a:focus {
 }
 
 #logo {
-    width: 38px;
-    height: 38px;
+    width: 35px;
+    height: 35px;
 }
 
 #logo_text {
     font-family: 'Pacifico', cursive;
-    font-size: 27px;
+    font-size: 22px;
 }
 
 .profile_div {
@@ -150,6 +157,10 @@ hr {
     max-width: 800px;
 }
 
+.navbar {
+    padding: 0.5rem 0;
+}
+
 .btn-info {
     border-radius: 20px;
     background-color: #1fa184;
@@ -170,7 +181,7 @@ hr {
     cursor: pointer; /* Add a mouse pointer on hover */
     width: 60px;
     height: 60px;
-    box-shadow: 1px 12px 32px 4px rgba(0,0,0,0.47);
+    box-shadow: 1px 12px 32px 7px rgba(0, 0, 0, 0.77);
 }
 
 #scroll_top_button i {
@@ -181,5 +192,16 @@ hr {
 @media screen and (max-width: 992px) {
     .zero_padding {
         padding: 0;
+    }
+    .menu_icon {
+        margin: 23px 0 23px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .sticky_section {
+        position: sticky;
+        top: 20px;
+        z-index: 1020;
     }
 }

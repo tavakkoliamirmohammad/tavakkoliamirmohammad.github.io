@@ -20,7 +20,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
 
     <title>Web Artisans</title>
 </head>
@@ -33,8 +32,8 @@
         <div id="dismiss">
             <i class="fa fa-arrow-left"></i>
         </div>
-        <div class="sticky-top p-3">
-            <div class="card text-center p-4 profile_div" id="">
+        <div class="p-3">
+            <div class="card text-center p-4 profile_div">
                 <img class="card-img-top rounded-circle m-auto" src="img/certy-programmer-1-195x195.png"
                      alt="Card image cap" style="width: 195px; height: 195px;">
                 <div class="card-body">
@@ -106,12 +105,10 @@
 </div>
 
 
-
-
 <div class="container-fluid" id="top_container">
     <div class="row">
-        <div class="col-md-12 col-lg-4 col-xl-3 zero_padding px-lg-3">
-            <div class="sticky-top pt-3">
+        <div class="col-md-12 col-lg-4 col-xl-3 zero_padding px-lg-3 order-2 order-lg-1">
+            <div  class="sticky_section">
                 <div class="card text-center p-4 profile_div">
                     <img class="card-img-top rounded-circle m-auto" src="img/certy-programmer-1-195x195.png"
                          alt="Card image cap" style="width: 195px; height: 195px;">
@@ -132,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12 col-lg-7 col-xl-8  zero_padding px-lg-3">
+        <div class="col-md-12 col-lg-7 col-xl-8  zero_padding px-lg-3 order-3 order-lg-1">
             <div class="container-fluid ">
                 <div class="row">
                     <div class="col-12 mb-lg-3 mb-sm-0 content p-4">
@@ -309,8 +306,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 content" id="work_experience">
-                        <h2 class="info-title p-4">WORK EXPERIENCE</h2>
+                    <div class="col-md-12 content">
+                        <h2 class="info-title p-4" id="work_experience">WORK EXPERIENCE</h2>
                         <div class="main-timeline p-4">
 
                             <div class="timeline">
@@ -366,16 +363,16 @@
 
             </div>
         </div>
-        <div class="col-1 zero_padding px-lg-3">
-            <div class="sticky-top d-none d-lg-block" id="side_menu">
-                <div>
+        <div class="col-12 col-lg-1 zero_padding px-lg-3 order-1 order-lg-3">
+            <div class="sticky_section row" id="side_menu">
+                <div class="col-4 col-lg-12 text-center">
                     <a href="#about_me"> <i class="fa fa-user menu_icon active"></i></a>
                 </div>
 
-                <div>
+                <div class="col-4 col-lg-12 text-center">
                     <a href="#info"> <i class="fa fa-image menu_icon"></i></a>
                 </div>
-                <div>
+                <div class="col-4 col-lg-12 text-center">
                     <a href="#work_experience"> <i class="fa fa-briefcase menu_icon"></i></a>
                 </div>
             </div>

@@ -12,13 +12,18 @@ $(document).ready(function () {
     }
 
     $("#scroll_top_button").click(function () {
-       $("html, body").animate({scrollTop: 0}, "slow");
-        console.log("a");
+       $("html, body").animate({scrollTop: 0}, 500);
+    });
+
+    $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
     });
 
     for (let i = 1; i <= 3; ++i){
         let progress_bar = $("#progress-bar" + i);
-        console.log( progress_bar.attr("aria-valuenow"));
         progress_bar.css({"width": "0%", "transition": "none"});
     }
     for (let i = 1; i <= 3; ++i){
